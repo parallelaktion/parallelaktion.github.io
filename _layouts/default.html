@@ -1,8 +1,17 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
   </head>
   <body>
-    {{ content }}
+    <div class="grid-container outline">
+      <div class="row">
+        <div class="col-4"><p>Text1</p></div>
+        <div class="col-4"><p>Text2</p></div>
+      </div>
+      <div class="row">
+        <div class="col-1"><p>{{ content }}</p></div>
+      </div>
+    </div>
   </body>
 </html>
