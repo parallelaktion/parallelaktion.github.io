@@ -1,58 +1,165 @@
----
----
+/*!
+ * Gridpak Beta CSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+ 
+ 
 
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-	width: 100%;
-	max-width: 1100px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/*  COLUMN SETUP  */
+/* Reusable column setup */
 .col {
-	display: block;
-	float:left;
-	margin: 1% 0 0 1%;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-
-/*  GRID OF SIX  */
-.span_6_of_6 {
-	width: 100%;
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
 }
 
-.span_5_of_6 {
-  	width: 83.16%;
-}
 
-.span_4_of_6 {
-  	width: 66.33%;
-}
 
-.span_3_of_6 {
-  	width: 49.5%;
-}
+    /* 1. 1 Column Grid 0px - 319px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    100%
+    
+    ----------------------------------------------------------------------------- */
 
-.span_2_of_6 {
-  	width: 32.66%;
-}
+    @media screen and (min-width: 0px) and (max-width: 579px) {
+        
+        .col {
+            margin-left:1%;
+        	padding:0 1.5%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        /*
+        Add your semantic classnames in alongside their corresponding spans here. e.g.
+        
+        .span_3,
+        .my_semantic_class_name {
+            ...
+        }
+        */
+        
+        .span_1, .title, .projects {
+            margin-left:0;
+            width:100%;
+        }
+    }
 
-.span_1_of_6 {
-  	width: 15.83%;
-}
+    /* 2. 7 Column Grid 780px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    13.4285714286%
+    Span 2:    27.8571428571%
+    Span 3:    42.2857142857%
+    Span 4:    56.7142857143%
+    Span 5:    71.1428571429%
+    Span 6:    85.5714285714%
+    Span 7:    100%
+    
+    ----------------------------------------------------------------------------- */
 
-/*  GO FULL WIDTH BELOW 800 PIXELS */
-@media only screen and (max-width: 800px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
-}
+    @media screen and (min-width: 580px) and (max-width: 819px) {
+        
+        .col {
+            margin-left:1%;
+        	padding:0 1%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        
+        .span_1 {
+            width:13.4285714286%;
+        }
+        .span_2, .title {
+            width:27.8571428571%;
+        }
+        .span_3 {
+            width:42.2857142857%;
+        }
+        .span_4 {
+            width:56.7142857143%;
+        }
+        .span_5, .projects {
+            width:71.1428571429%;
+        }
+        .span_6 {
+            width:85.5714285714%;
+        }
+        .span_7 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 3. 9 Column Grid 780px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    10.2222222222%
+    Span 2:    21.4444444444%
+    Span 3:    32.6666666667%
+    Span 4:    43.8888888889%
+    Span 5:    55.1111111111%
+    Span 6:    66.3333333333%
+    Span 7:    77.5555555556%
+    Span 8:    88.7777777778%
+    Span 9:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 820px) {
+        
+        .col {
+            margin-left:1%;
+        	padding:0 1%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        
+        .span_1 {
+            width:10.2222222222%;
+        }
+        .span_2, .title {
+            width:21.4444444444%;
+        }
+        .span_3 {
+            width:32.6666666667%;
+        }
+        .span_4 {
+            width:43.8888888889%;
+        }
+        .span_5 {
+            width:55.1111111111%;
+        }
+        .span_6 {
+            width:66.3333333333%;
+        }
+        .span_7, .projects {
+            width:77.5555555556%;
+        }
+        .span_8 {
+            width:88.7777777778%;
+        }
+        .span_9 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
