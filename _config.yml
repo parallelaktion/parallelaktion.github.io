@@ -1,1 +1,8 @@
-
+prose:
+  media: 'media'
+  ignore:
+    - _config.yml
+    - /_site
+    - /css
+    - Gemfile
+    - Gemfile.lock
